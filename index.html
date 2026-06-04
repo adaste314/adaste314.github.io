@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Adam Stepansky | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#resume">Resume</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <header class="hero hero-animate">
+    <div class="hero-text">
+      <p class="eyebrow">Portfolio</p>
+      <h1>Adam Stepansky</h1>
+      <p class="subtitle">Computer Science Student | Researcher | Developer</p>
+
+      <div class="hero-buttons">
+        <a href="#projects">View Projects</a>
+        <a href="#contact">Contact Me</a>
+        <a href="resume.pdf" target="_blank">Resume</a>
+      </div>
+    </div>
+
+    <div class="hero-photo">
+      <img src="profile.jpg" alt="Photo of Adam Stepansky" />
+    </div>
+  </header>
+
+  <main>
+    <section id="about" class="fade-in">
+      <h2>About Me</h2>
+      <p>
+        I'm a Computer Science student at Brandeis University with interests in
+        software engineering, machine learning, cloud computing, and quantitative
+        finance. I enjoy building practical applications that combine data,
+        automation, and intelligent decision-making to solve real-world problems.
+      </p>
+    </section>
+    
+    <section class="fade-in">
+      <h2>Technical Skills</h2>
+    
+      <div class="glow-card">
+        <span>AWS Cloud Architecture</span>
+        <span>Scikit-learn</span>
+        <span>Streamlit</span>
+        <span>Git</span>
+        <span>NumPy</span>
+        <span>Pandas</span>
+        <span>SQL</span>
+        <span>Linux</span>
+        <span>TensorFlow</span>
+        <span>PyTorch</span>
+      </div>
+    </section>
+
+    <section id="projects" class="fade-in">
+      <h2>Projects</h2>
+    
+      <div class="project-grid">
+    
+        <a class="project-card"
+           href="https://github.com/adaste314/aws-checker"
+           target="_blank">
+          <h3>AWS Security Checker</h3>
+          <p>
+            Cloud security auditing application that evaluates AWS accounts
+            against security best practices and provides remediation guidance.
+          </p>
+          <p class="tech">Python · Streamlit · AWS SDK (boto3) · Pandas · Plotly</p>
+        </a>
+    
+        <a class="project-card"
+           href="https://github.com/adaste314/QuantCopperPredictor"
+           target="_blank">
+          <h3>Quant Copper Predictor</h3>
+          <p>
+            Quantitative forecasting model that predicts short-term copper price
+            direction using macroeconomic and commodity market indicators.
+          </p>
+          <p class="tech">Python · NumPy · Scikit-learn · Financial Data APIs</p>
+        </a>
+    
+        <a class="project-card"
+           href="https://github.com/adaste314/pd_classifier"
+           target="_blank">
+          <h3>Personality Disorder Classifier</h3>
+          <p>
+            Machine learning model that classifies online text based on linguistic
+            similarity to communities associated with Borderline Personality
+            Disorder and Antisocial Personality Disorder.
+          </p>
+          <p class="tech">Python · NLP · Logistic Regression · Scikit-learn</p>
+        </a>
+    
+        <a class="project-card"
+           href="https://github.com/adaste314/Black-Scholes-Project"
+           target="_blank">
+          <h3>Black-Scholes Option Pricing Model</h3>
+          <p>
+            Financial modeling project implementing the Black-Scholes equation
+            for pricing European options and analyzing option sensitivities.
+          </p>
+          <p class="tech">Python · Quantitative Finance · NumPy · Data Analysis</p>
+        </a>
+    
+      </div>
+    </section>
+
+    <section class="fade-in">
+      <h2>Currently Building</h2>
+    
+      <div class="project-card">
+        <div class="building-badge">IN PROGRESS</div>
+      
+        <h3>Internship Discovery and Application Platform</h3>
+      
+        <p>
+          In early development.
+        </p>
+      
+        <p class="tech">Coming Soon</p>
+      </div>
+    </section>
+
+    <section id="resume" class="fade-in">
+      <h2>Resume</h2>
+      <p>You can view or download my resume using the button below.</p>
+      <a class="button" href="resume.pdf" target="_blank">Open Resume</a>
+    </section>
+
+    <section id="contact" class="fade-in">
+      <h2>Contact</h2>
+
+      <div class="contact-buttons">
+        <a href="mailto:adaste314@gmail.com">Email</a>
+        <a href="https://github.com/adaste314" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Adam Stepansky</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
