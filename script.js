@@ -1,5 +1,3 @@
-// Single-reveal for manifest rows. Content is visible by default; the .js
-// class opts into the hidden-then-revealed treatment only when this runs.
 document.documentElement.classList.add("js");
 
 const rows = document.querySelectorAll(".reveal");
