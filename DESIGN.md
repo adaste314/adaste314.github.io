@@ -4,7 +4,7 @@ Visual system for adamstepansky.com. Register: brand (portfolio). Voice: precise
 
 ## Theme
 
-Dark. The site reads like a well-lit instrument panel: near-black green ground, hairline structure, green used as a signal color rather than a glow. No glassmorphism, no ambient pulsing.
+Dark. The site reads like a well-lit instrument panel: near-black green ground, hairline structure, green used as a signal color rather than a glow; professional, not terminal-themed. No glassmorphism, no ambient pulsing.
 
 ## Color
 
@@ -27,23 +27,23 @@ Strategy: Restrained-committed. Green is a *signal* (status dots, labels, one fi
 
 ## Typography
 
-- **Display / headings / labels:** Martian Mono (Google Fonts, variable) — sturdy spec-sheet mono. Headings 500–700, tracking −0.02em to −0.03em at display sizes. Labels 400–500, 11–13px, uppercase only for short markers.
-- **Body:** Archivo (Google Fonts, variable) — quiet grotesque, 400/500, 16–17px, line-height 1.65 (light-on-dark needs air). Max measure 68ch.
+- **Single family: Archivo** (Google Fonts) with committed weight contrast — 800 display, 700 headings, 600 labels, 400 body. No monospace: terminal styling was dialed out for a professional read (user decision, 2026-07).
+- Body 16–17px, line-height 1.65 (light-on-dark needs air). Max measure 68ch. Display tracking −0.025em.
 - Scale: fluid clamp, ratio ≥1.25. Hero name clamp(2.6rem, 7vw, 5rem).
 
 ## Layout
 
 - Single column, max-width 1060px, left-aligned content (no centered-everything).
-- Structure carried by horizontal hairline rules between sections and a two-column "annotation" grid: section marker column (mono label, sticky feel) + content column. Collapses to stacked on mobile.
+- Structure carried by horizontal hairline rules between sections and a two-column grid: section heading column + content column. Collapses to stacked on mobile.
 - **Projects are a manifest, not a card grid**: full-width rows with title, description, tech metadata, and a live/status column, separated by hairlines. Hover = row lifts tint + arrow slide.
 - Sharp geometry: border-radius 0–6px max. No pill buttons except small status chips.
 
 ## Components
 
-- **Status chip**: mono 11px, dot + text (`● LIVE`, `● IN PROGRESS`), hairline border, no fill glow.
+- **Status chip**: 12.5px/600, dot + text (`● Live`, `● In progress`), hairline border, no fill glow.
 - **Primary CTA**: filled `--green-deep`, ink white, radius 4px. Secondary: hairline border, `--green-bright` text.
-- **Skill tokens**: inline mono text separated by `·` or thin rules — not pill clouds.
-- **Nav**: sticky, hairline bottom border, mono links, blur backdrop at 0.85 fill.
+- **Skill tokens**: inline text separated by `·` — not pill clouds.
+- **Nav**: sticky, hairline bottom border, blur backdrop at 0.85 fill.
 
 ## Motion
 
