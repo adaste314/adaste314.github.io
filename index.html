@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css?v=3" />
+  <link rel="stylesheet" href="style.css?v=4" />
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -47,8 +47,8 @@
 
   <main id="main">
 
-    <section id="about" class="sheet">
-      <h2 class="marker">About</h2>
+    <section id="about" class="panel reveal">
+      <h2>About</h2>
       <div class="content">
         <p class="lede">
           I build practical software that combines data, automation, and
@@ -71,29 +71,29 @@
       </div>
     </section>
 
-    <section id="skills" class="sheet">
-      <h2 class="marker">Skills</h2>
+    <section id="skills" class="panel reveal">
+      <h2>Skills</h2>
       <div class="content">
         <div class="skill-group">
           <h3>Languages</h3>
-          <p class="tokens">Python · Java · C# · JavaScript · C / C++ · SQL · HTML / CSS</p>
+          <div class="pills"><span>Python</span><span>Java</span><span>C#</span><span>JavaScript</span><span>C / C++</span><span>SQL</span><span>HTML / CSS</span></div>
         </div>
         <div class="skill-group">
           <h3>ML &amp; data</h3>
-          <p class="tokens">TensorFlow · PyTorch · Scikit-learn · NumPy · Pandas · NLP</p>
+          <div class="pills"><span>TensorFlow</span><span>PyTorch</span><span>Scikit-learn</span><span>NumPy</span><span>Pandas</span><span>NLP</span></div>
         </div>
         <div class="skill-group">
           <h3>Tools &amp; cloud</h3>
-          <p class="tokens">AWS · ASP.NET · Streamlit · Git · Linux</p>
+          <div class="pills"><span>AWS</span><span>ASP.NET</span><span>Streamlit</span><span>Git</span><span>Linux</span></div>
         </div>
       </div>
     </section>
 
-    <section id="projects" class="sheet">
-      <h2 class="marker">Projects</h2>
+    <section id="projects" class="panel reveal">
+      <h2>Projects</h2>
       <div class="content manifest">
 
-        <a class="entry reveal" href="https://lodian.ai/" target="_blank" rel="noopener">
+        <a class="entry" href="https://lodian.ai/" target="_blank" rel="noopener">
           <div class="entry-head">
             <h3>Lodian AI</h3>
             <span class="chip chip-live"><span class="dot" aria-hidden="true"></span>Live</span>
@@ -108,7 +108,7 @@
           <p class="tech">Developer tools · Claude Code · Web console · CLI</p>
         </a>
 
-        <a class="entry reveal" href="https://impostor-td.netlify.app/" target="_blank" rel="noopener">
+        <a class="entry" href="https://impostor-td.netlify.app/" target="_blank" rel="noopener">
           <div class="entry-head">
             <h3>Impostor Online</h3>
             <span class="chip chip-live"><span class="dot" aria-hidden="true"></span>Live</span>
@@ -123,7 +123,7 @@
           <p class="tech">JavaScript · Node.js · Live lobby server</p>
         </a>
 
-        <a class="entry reveal" href="https://github.com/adaste314/aws-checker" target="_blank" rel="noopener">
+        <a class="entry" href="https://github.com/adaste314/aws-checker" target="_blank" rel="noopener">
           <div class="entry-head">
             <h3>AWS Security Checker</h3>
             <span class="chip"><span class="dot" aria-hidden="true"></span>Code</span>
@@ -136,7 +136,7 @@
           <p class="tech">Python · Streamlit · AWS SDK (boto3) · Pandas · Plotly</p>
         </a>
 
-        <a class="entry reveal" href="https://github.com/adaste314/QuantCopperPredictor" target="_blank" rel="noopener">
+        <a class="entry" href="https://github.com/adaste314/QuantCopperPredictor" target="_blank" rel="noopener">
           <div class="entry-head">
             <h3>Quant Copper Predictor</h3>
             <span class="chip"><span class="dot" aria-hidden="true"></span>Code</span>
@@ -149,7 +149,7 @@
           <p class="tech">Python · NumPy · Scikit-learn · Financial data APIs</p>
         </a>
 
-        <a class="entry reveal" href="https://github.com/adaste314/pd_classifier" target="_blank" rel="noopener">
+        <a class="entry" href="https://github.com/adaste314/pd_classifier" target="_blank" rel="noopener">
           <div class="entry-head">
             <h3>Personality Disorder Classifier</h3>
             <span class="chip"><span class="dot" aria-hidden="true"></span>Code</span>
@@ -163,7 +163,7 @@
           <p class="tech">Python · NLP · Logistic regression · Scikit-learn</p>
         </a>
 
-        <a class="entry reveal" href="https://github.com/adaste314/Black-Scholes-Project" target="_blank" rel="noopener">
+        <a class="entry" href="https://github.com/adaste314/Black-Scholes-Project" target="_blank" rel="noopener">
           <div class="entry-head">
             <h3>Black-Scholes Option Pricing</h3>
             <span class="chip"><span class="dot" aria-hidden="true"></span>Code</span>
@@ -179,11 +179,11 @@
       </div>
     </section>
 
-    <section id="now" class="sheet">
-      <h2 class="marker">Currently building</h2>
+    <section id="now" class="panel reveal">
+      <h2>Currently building</h2>
       <div class="content manifest">
 
-        <div class="entry reveal">
+        <div class="entry">
           <div class="entry-head">
             <h3>Folder Sizes in File Explorer</h3>
             <span class="chip chip-wip"><span class="dot" aria-hidden="true"></span>In&nbsp;progress</span>
@@ -196,7 +196,7 @@
           <p class="tech">Windows shell extension · C# / C++ · Win32 API</p>
         </div>
 
-        <div class="entry reveal">
+        <div class="entry">
           <div class="entry-head">
             <h3>AI GIF &amp; Image Search Plugin</h3>
             <span class="chip chip-wip"><span class="dot" aria-hidden="true"></span>In&nbsp;progress</span>
@@ -212,8 +212,8 @@
       </div>
     </section>
 
-    <section id="contact" class="sheet">
-      <h2 class="marker">Contact</h2>
+    <section id="contact" class="panel reveal">
+      <h2>Contact</h2>
       <div class="content">
         <p class="lede">The fastest way to reach me is email — I read everything.</p>
         <div class="contact-actions">

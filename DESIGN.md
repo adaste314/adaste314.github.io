@@ -33,10 +33,9 @@ Strategy: Restrained-committed. Green is a *signal* (status dots, labels, one fi
 
 ## Layout
 
-- Single column, max-width 1060px, left-aligned content (no centered-everything).
-- Structure carried by horizontal hairline rules between sections and a two-column grid: section heading column + content column. Collapses to stacked on mobile.
-- **Projects are a manifest, not a card grid**: full-width rows with title, description, tech metadata, and a live/status column, separated by hairlines. Hover = row lifts tint + arrow slide.
-- Sharp geometry: border-radius 0–6px max. No pill buttons except small status chips.
+- Single column, max-width 1100px. Sections are raised rounded panels (radius 20px, hairline border) — user preference (2026-07): cards and lively animation over flat manifest rows.
+- **Projects are a responsive card grid** (`auto-fit, minmax(300px, 1fr)`): radius 16px cards, hover lift (translateY −8px + scale 1.02 + green-tinted shadow).
+- Skills are pill chips (no infinite pulse; hover lift only). Buttons are pills.
 
 ## Components
 
@@ -47,7 +46,7 @@ Strategy: Restrained-committed. Green is a *signal* (status dots, labels, one fi
 
 ## Motion
 
-One orchestrated hero entrance (staggered rise+fade of name lines, ~600ms, ease-out-quint). Project rows: single reveal on first scroll into view (no un-reveal). Hovers: 150–200ms transform/color. Everything gated behind `prefers-reduced-motion: reduce` → instant/opacity-only. Nothing loops or pulses.
+Staggered hero entrance; gentle infinite float on the portrait; section panels fade+rise once on scroll into view; hover lifts on cards, pills, buttons. All gated behind `prefers-reduced-motion`. No pulsing glows.
 
 ## Bans (project-specific)
 
