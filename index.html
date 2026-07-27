@@ -3,208 +3,232 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Adam Stepansky | Portfolio</title>
+  <title>Adam Stepansky — Software Engineer</title>
+  <meta name="description" content="Adam Stepansky — CS student at Brandeis '28, co-founder of Lodian AI, software engineer intern. Projects, skills, and contact." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Martian+Mono:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <nav>
-    <a href="#about">About</a>
-    <a href="#projects">Projects</a>
-    <a href="#resume">Resume</a>
-    <a href="#contact">Contact</a>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <nav aria-label="Main">
+    <a class="brand" href="#top">adam·stepansky</a>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="resume.pdf" target="_blank">Resume</a>
+      <a href="#contact">Contact</a>
+    </div>
   </nav>
 
-  <header class="hero hero-animate">
+  <header class="hero" id="top">
     <div class="hero-text">
-      <p class="eyebrow">Portfolio</p>
-      <h1>Adam Stepansky</h1>
-      <p class="subtitle">Computer Science Student | Developer</p>
-
-      <div class="hero-buttons">
-        <a href="#projects">View Projects</a>
-        <a href="#contact">Contact Me</a>
-        <a href="resume.pdf" target="_blank">Resume</a>
+      <p class="status-line"><span class="dot" aria-hidden="true"></span>Open to SWE internships — Boston · New York</p>
+      <h1><span class="line">Adam</span> <span class="line">Stepansky</span></h1>
+      <p class="role">
+        Computer science at Brandeis&nbsp;&rsquo;28. Co-founder of Lodian&nbsp;AI.
+        Software engineer intern at Smart&nbsp;Advocate.
+      </p>
+      <div class="hero-actions">
+        <a class="btn-solid" href="#projects">View projects</a>
+        <a class="btn-line" href="resume.pdf" target="_blank">Resume&nbsp;<span aria-hidden="true">↗</span></a>
       </div>
+      <p class="hero-meta">
+        Waltham, MA · AWS Certified Cloud Practitioner ·
+        <a href="https://github.com/adaste314" target="_blank" rel="noopener">github.com/adaste314</a>
+      </p>
     </div>
-
     <div class="hero-photo">
-      <img src="profile.jpg" alt="Photo of Adam Stepansky" />
+      <img src="profile.jpg" alt="Adam Stepansky" width="420" height="480" />
     </div>
   </header>
 
-  <main>
-    <section id="about" class="fade-in">
-      <h2>About Me</h2>
-      <p>
-        I'm a Computer Science student at Brandeis University (B.S. expected 2028)
-        with interests in software engineering, machine learning, cloud computing,
-        and quantitative finance. I'm a co-founder of Lodian AI, a freelance web
-        designer, and a Software Engineer Intern at Smart Advocate (since May 2025),
-        working in C# and ASP.NET. On campus I serve as President and Project
-        Manager of the Brandeis Quant Club and Treasurer of Phi Kappa Psi, and I'm
-        an AWS Certified Cloud Practitioner. I enjoy building practical applications
-        that combine data, automation, and intelligent decision-making to solve
-        real-world problems.
-      </p>
-    </section>
-    
-    <section class="fade-in">
-      <h2>Technical Skills</h2>
-    
-      <div class="glow-card">
-        <span>AWS Cloud Architecture</span>
-        <span>Python</span>
-        <span>Java</span>
-        <span>C# / ASP.NET</span>
-        <span>JavaScript</span>
-        <span>HTML / CSS</span>
-        <span>C / C++</span>
-        <span>Scikit-learn</span>
-        <span>Streamlit</span>
-        <span>Git</span>
-        <span>NumPy</span>
-        <span>Pandas</span>
-        <span>SQL</span>
-        <span>Linux</span>
-        <span>TensorFlow</span>
-        <span>PyTorch</span>
+  <main id="main">
+
+    <section id="about" class="sheet">
+      <h2 class="marker"><span aria-hidden="true">~/</span>about</h2>
+      <div class="content">
+        <p class="lede">
+          I build practical software that combines data, automation, and
+          intelligent decision-making — and I like shipping it, not just
+          starting it.
+        </p>
+        <p>
+          I'm a Computer Science student at Brandeis University with interests in
+          software engineering, machine learning, cloud computing, and
+          quantitative finance. Alongside school I co-founded Lodian AI, work as
+          a software engineer intern at Smart Advocate (C# / ASP.NET), and take
+          on freelance web design.
+        </p>
+        <dl class="facts">
+          <div class="fact"><dt>school</dt><dd>Brandeis University — B.S. Computer Science, expected 2028</dd></div>
+          <div class="fact"><dt>work</dt><dd>Software Engineer Intern @ Smart Advocate · Co-founder @ Lodian AI</dd></div>
+          <div class="fact"><dt>campus</dt><dd>President &amp; Project Manager, Brandeis Quant Club · Treasurer, Phi Kappa Psi</dd></div>
+          <div class="fact"><dt>cert</dt><dd>AWS Certified Cloud Practitioner</dd></div>
+        </dl>
       </div>
     </section>
 
-    <section id="projects" class="fade-in">
-      <h2>Projects</h2>
-    
-      <div class="project-grid">
-    
-        <a class="project-card"
-           href="https://github.com/adaste314/aws-checker"
-           target="_blank">
-          <h3>AWS Security Checker</h3>
+    <section id="skills" class="sheet">
+      <h2 class="marker"><span aria-hidden="true">~/</span>skills</h2>
+      <div class="content">
+        <div class="skill-group">
+          <h3>Languages</h3>
+          <p class="tokens">Python · Java · C# · JavaScript · C / C++ · SQL · HTML / CSS</p>
+        </div>
+        <div class="skill-group">
+          <h3>ML &amp; data</h3>
+          <p class="tokens">TensorFlow · PyTorch · Scikit-learn · NumPy · Pandas · NLP</p>
+        </div>
+        <div class="skill-group">
+          <h3>Tools &amp; cloud</h3>
+          <p class="tokens">AWS · ASP.NET · Streamlit · Git · Linux</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="sheet">
+      <h2 class="marker"><span aria-hidden="true">~/</span>projects</h2>
+      <div class="content manifest">
+
+        <a class="entry reveal" href="https://lodian.ai/" target="_blank" rel="noopener">
+          <div class="entry-head">
+            <h3>Lodian AI</h3>
+            <span class="chip chip-live"><span class="dot" aria-hidden="true"></span>live</span>
+            <span class="go" aria-hidden="true">↗</span>
+          </div>
+          <p>
+            Co-founder. A topic-broadcast channel inside Claude Code: publishers
+            post short messages from a web console, developers subscribe from the
+            terminal and read them in their status line. Opt-in, non-interrupting,
+            one-command install.
+          </p>
+          <p class="tech">Developer tools · Claude Code · Web console · CLI</p>
+        </a>
+
+        <a class="entry reveal" href="https://impostor-td.netlify.app/" target="_blank" rel="noopener">
+          <div class="entry-head">
+            <h3>Impostor Online</h3>
+            <span class="chip chip-live"><span class="dot" aria-hidden="true"></span>live</span>
+            <span class="go" aria-hidden="true">↗</span>
+          </div>
+          <p>
+            An online version of the viral game Impostor — play around the table
+            on one device or across multiple online, with custom lobbies for
+            friends and online matchmaking. Multiple game modes, playable
+            entirely in the browser.
+          </p>
+          <p class="tech">JavaScript · Node.js · Live lobby server</p>
+        </a>
+
+        <a class="entry reveal" href="https://github.com/adaste314/aws-checker" target="_blank" rel="noopener">
+          <div class="entry-head">
+            <h3>AWS Security Checker</h3>
+            <span class="chip"><span class="dot" aria-hidden="true"></span>code</span>
+            <span class="go" aria-hidden="true">↗</span>
+          </div>
           <p>
             Cloud security auditing application that evaluates AWS accounts
             against security best practices and provides remediation guidance.
           </p>
           <p class="tech">Python · Streamlit · AWS SDK (boto3) · Pandas · Plotly</p>
         </a>
-    
-        <a class="project-card"
-           href="https://github.com/adaste314/QuantCopperPredictor"
-           target="_blank">
-          <h3>Quant Copper Predictor</h3>
+
+        <a class="entry reveal" href="https://github.com/adaste314/QuantCopperPredictor" target="_blank" rel="noopener">
+          <div class="entry-head">
+            <h3>Quant Copper Predictor</h3>
+            <span class="chip"><span class="dot" aria-hidden="true"></span>code</span>
+            <span class="go" aria-hidden="true">↗</span>
+          </div>
           <p>
             Quantitative forecasting model that predicts short-term copper price
             direction using macroeconomic and commodity market indicators.
           </p>
-          <p class="tech">Python · NumPy · Scikit-learn · Financial Data APIs</p>
+          <p class="tech">Python · NumPy · Scikit-learn · Financial data APIs</p>
         </a>
-    
-        <a class="project-card"
-           href="https://github.com/adaste314/pd_classifier"
-           target="_blank">
-          <h3>Personality Disorder Classifier</h3>
+
+        <a class="entry reveal" href="https://github.com/adaste314/pd_classifier" target="_blank" rel="noopener">
+          <div class="entry-head">
+            <h3>Personality Disorder Classifier</h3>
+            <span class="chip"><span class="dot" aria-hidden="true"></span>code</span>
+            <span class="go" aria-hidden="true">↗</span>
+          </div>
           <p>
             Machine learning model that classifies online text based on linguistic
-            similarity to communities associated with Borderline Personality
-            Disorder and Antisocial Personality Disorder.
+            similarity to communities associated with Borderline and Antisocial
+            Personality Disorders.
           </p>
-          <p class="tech">Python · NLP · Logistic Regression · Scikit-learn</p>
-        </a>
-    
-        <a class="project-card"
-           href="https://lodian.ai/"
-           target="_blank">
-          <h3>Lodian AI</h3>
-          <p>
-            Co-founder. Lodian is a topic-broadcast channel inside Claude Code:
-            publishers post short messages from a web console, and developers
-            subscribe from the terminal to read them in their Claude Code status
-            line. Opt-in, non-interrupting, installed with a single command.
-          </p>
-          <p class="tech">Developer Tools · Claude Code · Web Console · CLI</p>
+          <p class="tech">Python · NLP · Logistic regression · Scikit-learn</p>
         </a>
 
-        <a class="project-card"
-           href="https://impostor-td.netlify.app/"
-           target="_blank">
-          <h3>Impostor Online</h3>
+        <a class="entry reveal" href="https://github.com/adaste314/Black-Scholes-Project" target="_blank" rel="noopener">
+          <div class="entry-head">
+            <h3>Black-Scholes Option Pricing</h3>
+            <span class="chip"><span class="dot" aria-hidden="true"></span>code</span>
+            <span class="go" aria-hidden="true">↗</span>
+          </div>
           <p>
-            An online version of the viral game Impostor — play around the table
-            on one device or across multiple online, with custom lobbies for
-            friends and online matchmaking. Multiple game modes and integrations
-            let you play entirely within the site. Try it live!
+            Financial modeling project implementing the Black-Scholes equation for
+            pricing European options and analyzing option sensitivities.
           </p>
-          <p class="tech">JavaScript · Node.js · HTML/CSS · Live lobby server</p>
+          <p class="tech">Python · Quantitative finance · NumPy · Data analysis</p>
         </a>
 
-        <a class="project-card"
-           href="https://github.com/adaste314/Black-Scholes-Project"
-           target="_blank">
-          <h3>Black-Scholes Option Pricing Model</h3>
-          <p>
-            Financial modeling project implementing the Black-Scholes equation
-            for pricing European options and analyzing option sensitivities.
-          </p>
-          <p class="tech">Python · Quantitative Finance · NumPy · Data Analysis</p>
-        </a>
-    
       </div>
     </section>
 
-    <section class="fade-in">
-      <h2>Currently Building</h2>
-    
-      <div class="project-grid">
+    <section id="now" class="sheet">
+      <h2 class="marker"><span aria-hidden="true">~/</span>now</h2>
+      <div class="content manifest">
 
-        <div class="project-card">
-          <div class="building-badge">IN PROGRESS</div>
-
-          <h3>Folder Sizes in File Explorer</h3>
-
+        <div class="entry reveal">
+          <div class="entry-head">
+            <h3>Folder Sizes in File Explorer</h3>
+            <span class="chip chip-wip"><span class="dot" aria-hidden="true"></span>in&nbsp;progress</span>
+          </div>
           <p>
             A Windows shell extension that displays folder storage sizes directly
             inside File Explorer — see how much space every folder takes at a
             glance, without opening Properties one folder at a time.
           </p>
-
-          <p class="tech">Windows Shell Extension · C# / C++ · Win32 API</p>
+          <p class="tech">Windows shell extension · C# / C++ · Win32 API</p>
         </div>
 
-        <div class="project-card">
-          <div class="building-badge">IN PROGRESS</div>
-
-          <h3>AI GIF &amp; Image Search Plugin</h3>
-
+        <div class="entry reveal">
+          <div class="entry-head">
+            <h3>AI GIF &amp; Image Search Plugin</h3>
+            <span class="chip chip-wip"><span class="dot" aria-hidden="true"></span>in&nbsp;progress</span>
+          </div>
           <p>
             A browser plugin that uses AI to classify GIFs and images on sites
-            like Giphy, so you can find the one you want just by describing it
-            in plain language.
+            like Giphy, so you can find the one you want just by describing it in
+            plain language.
           </p>
-
-          <p class="tech">Browser Extension · JavaScript · AI Vision Models</p>
+          <p class="tech">Browser extension · JavaScript · AI vision models</p>
         </div>
 
       </div>
     </section>
 
-    <section id="resume" class="fade-in">
-      <h2>Resume</h2>
-      <p>You can view or download my resume using the button below.</p>
-      <a class="button" href="resume.pdf" target="_blank">Open Resume</a>
-    </section>
-
-    <section id="contact" class="fade-in">
-      <h2>Contact</h2>
-
-      <div class="contact-buttons">
-        <a href="mailto:adaste314@gmail.com">Email</a>
-        <a href="https://github.com/adaste314" target="_blank">GitHub</a>
-        <a href="https://www.linkedin.com/in/adam-stepansky-405904329" target="_blank">LinkedIn</a>
+    <section id="contact" class="sheet">
+      <h2 class="marker"><span aria-hidden="true">~/</span>contact</h2>
+      <div class="content">
+        <p class="lede">The fastest way to reach me is email — I read everything.</p>
+        <div class="contact-actions">
+          <a class="btn-solid" href="mailto:adaste314@gmail.com">Email me</a>
+          <a class="btn-line" href="https://github.com/adaste314" target="_blank" rel="noopener">GitHub&nbsp;<span aria-hidden="true">↗</span></a>
+          <a class="btn-line" href="https://www.linkedin.com/in/adam-stepansky-405904329" target="_blank" rel="noopener">LinkedIn&nbsp;<span aria-hidden="true">↗</span></a>
+          <a class="btn-line" href="resume.pdf" target="_blank">Resume&nbsp;<span aria-hidden="true">↗</span></a>
+        </div>
       </div>
     </section>
+
   </main>
 
   <footer>
-    <p>© 2026 Adam Stepansky</p>
+    <p>© 2026 Adam Stepansky — adamstepansky.com</p>
   </footer>
 
   <script src="script.js"></script>
