@@ -10,7 +10,7 @@ Recruiters, internship coordinators, and engineering peers arriving from Adam's 
 
 ## Product Purpose
 
-Personal portfolio for Adam Stepansky (adamstepansky.com) — CS student at Brandeis '28, co-founder of Lodian AI, software engineer intern. The site exists to convert a visit into an interview: show real, shipped projects (several live), current roles, and skills, and make contact effortless. Success = recruiter clicks a live project or the resume and reaches out.
+Personal portfolio for Adam Stepansky (adamstepansky.com) — CS student at Brandeis '28, founder of Lodian AI, software engineer intern. The site exists to convert a visit into an interview: show real, shipped projects (several live), current roles, and skills, and make contact effortless. Success = recruiter clicks a live project or the resume and reaches out.
 
 ## Brand Personality
 
